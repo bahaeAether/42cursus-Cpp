@@ -6,7 +6,7 @@
 /*   By: baboulou <baboulou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 00:18:08 by baboulou          #+#    #+#             */
-/*   Updated: 2024/02/16 00:29:38 by baboulou         ###   ########.fr       */
+/*   Updated: 2024/02/18 03:44:54 by baboulou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ int main(void)
 	std::cout << "b is " << b.toInt() << " as integer" << std::endl;
 	std::cout << "c is " << c.toInt() << " as integer" << std::endl;
 	std::cout << "d is " << d.toInt() << " as integer" << std::endl;
+
 	return 0;
 }

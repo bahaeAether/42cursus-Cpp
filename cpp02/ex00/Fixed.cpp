@@ -6,11 +6,13 @@
 /*   By: baboulou <baboulou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 17:20:31 by baboulou          #+#    #+#             */
-/*   Updated: 2024/02/17 03:21:16 by baboulou         ###   ########.fr       */
+/*   Updated: 2024/02/18 03:13:54 by baboulou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
+
+const int	Fixed::bits = 8;
 
 Fixed::Fixed()
 {

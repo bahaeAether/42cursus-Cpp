@@ -6,11 +6,13 @@
 /*   By: baboulou <baboulou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 02:14:27 by baboulou          #+#    #+#             */
-/*   Updated: 2024/02/17 03:21:09 by baboulou         ###   ########.fr       */
+/*   Updated: 2024/02/18 03:10:14 by baboulou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
+
+const int	Fixed::bits = 8;
 
 Fixed::Fixed()
 {
@@ -123,6 +125,11 @@ Fixed	Fixed::operator*(const Fixed &fixed) const
 
 Fixed	Fixed::operator/(const Fixed &fixed) const
 {
+	if (fixed.toFloat() == 0)
+	{
+		std::cout << "Error: division by zero" << std::endl;
+		return (Fixed(0));
+	}
 	return (Fixed(this->toFloat() / fixed.toFloat()));
 }
 

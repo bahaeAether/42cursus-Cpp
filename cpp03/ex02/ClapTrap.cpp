@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: baboulou <baboulou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/17 01:38:04 by baboulou          #+#    #+#             */
-/*   Updated: 2024/02/18 00:03:55 by baboulou         ###   ########.fr       */
+/*   Created: 2024/02/18 00:23:36 by baboulou          #+#    #+#             */
+/*   Updated: 2024/02/18 00:42:03 by baboulou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ ClapTrap	&ClapTrap::operator=(const ClapTrap &copyClap)
 	this->hitPoints = copyClap.hitPoints;
 	this->attackDamage = copyClap.attackDamage;
 	this->energyPoints = copyClap.energyPoints;
-	std::cout << "ClapTrap " << this->name << "'s assignation operator called!" << std::endl;
+	std::cout << "ClapTrap " << this->name << "'s assignment operator called!" << std::endl;
 	return (*this);
 }
 

@@ -6,13 +6,13 @@
 #    By: baboulou <baboulou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/14 16:17:16 by baboulou          #+#    #+#              #
-#    Updated: 2024/02/17 23:40:24 by baboulou         ###   ########.fr        #
+#    Updated: 2024/02/18 00:37:31 by baboulou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = a.out
 
-SRCS = ./main.cpp ClapTrap.cpp ScavTrap.cpp
+SRCS = ./main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

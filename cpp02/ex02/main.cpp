@@ -6,18 +6,11 @@
 /*   By: baboulou <baboulou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 02:17:33 by baboulou          #+#    #+#             */
-/*   Updated: 2024/02/17 00:37:51 by baboulou         ###   ########.fr       */
+/*   Updated: 2024/02/18 03:15:54 by baboulou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
-
-void	printValue(std::string s)
-{
-	std::cout << s << std::endl;
-	s.erase(1);
-	std::cout << s << std::endl;
-}
 
 int main(void)
 {
@@ -38,6 +31,11 @@ int main(void)
 		std::cout << "b is bigger than a" << std::endl;
 	else
 		std::cout << "a and b are equal" << std::endl;
-
+	std::cout << "-----------------" << std::endl;
+	a = Fixed(20.2f);
+	std::cout << "a + b = " << a + b << std::endl;
+	std::cout << "a - b = " << a - b << std::endl;
+	std::cout << "a * b = " << a * b << std::endl;
+	std::cout << "a / b = " << a / b << std::endl;
 	return 0;
 }

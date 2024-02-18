@@ -6,7 +6,7 @@
 /*   By: baboulou <baboulou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 16:40:51 by baboulou          #+#    #+#             */
-/*   Updated: 2024/02/17 03:20:58 by baboulou         ###   ########.fr       */
+/*   Updated: 2024/02/18 03:13:46 by baboulou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,5 @@ class Fixed
 		int					getRawBits(void) const;
 		void				setRawBits(int const raw);
 };
-
-const int	Fixed::bits = 8;
 
 #endif

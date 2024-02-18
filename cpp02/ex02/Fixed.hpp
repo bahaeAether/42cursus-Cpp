@@ -6,7 +6,7 @@
 /*   By: baboulou <baboulou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 02:02:26 by baboulou          #+#    #+#             */
-/*   Updated: 2024/02/17 03:21:04 by baboulou         ###   ########.fr       */
+/*   Updated: 2024/02/18 03:22:47 by baboulou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ class Fixed
 		Fixed(const int raw);
 		Fixed(const float raw);
 		~Fixed();
-		std::ostream		&operator<<(std::ostream &cout);
 		Fixed				&operator=(const Fixed &fixed);
 		int					getRawBits(void) const;
 		void				setRawBits(int const raw);
@@ -58,8 +57,6 @@ class Fixed
 		static const Fixed	&min(const Fixed &a, const Fixed &b);
 		static const Fixed	&max(const Fixed &a, const Fixed &b);
 };
-
-const int	Fixed::bits = 8;
 
 std::ostream	&operator<<(std::ostream &cout, const Fixed &fixed);
 
