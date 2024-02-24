@@ -6,7 +6,7 @@
 /*   By: baboulou <baboulou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 08:50:34 by baboulou          #+#    #+#             */
-/*   Updated: 2024/02/13 12:45:18 by baboulou         ###   ########.fr       */
+/*   Updated: 2024/02/24 04:53:31 by baboulou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,6 @@ class Phonebook
 		Contact		parseContact(void);
 };
 
-bool	isNumber(std::string str);
+bool				isNumber(std::string str);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: baboulou <baboulou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/18 17:47:07 by baboulou          #+#    #+#             */
-/*   Updated: 2024/02/19 08:22:18 by baboulou         ###   ########.fr       */
+/*   Updated: 2024/02/19 03:54:05 by baboulou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,4 @@ Animal::~Animal(void)
 std::string	Animal::getType(void) const
 {
 	return (this->type);
-}
-
-void		Animal::makeSound(void) const
-{
-	std::cout << "Animal sound" << std::endl;
 }

@@ -1,47 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: baboulou <baboulou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/18 17:47:07 by baboulou          #+#    #+#             */
-/*   Updated: 2024/02/19 08:22:18 by baboulou         ###   ########.fr       */
+/*   Updated: 2024/02/18 17:56:45 by baboulou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-Animal::Animal(void)
+WrongAnimal::WrongAnimal(void)
 {
-	this->type = "Animal";
-	std::cout << "Animal constructor called" << std::endl;
+	this->type = "WrongAnimal";
+	std::cout << "WrongAnimal constructor called" << std::endl;
 }
 
-Animal::Animal(const Animal &cpy)
+WrongAnimal::WrongAnimal(const WrongAnimal &cpy)
 {
 	this->type = cpy.type;
-	std::cout << "Animal copy constructor called" << std::endl;
+	std::cout << "WrongAnimal copy constructor called" << std::endl;
 }
 
-Animal		&Animal::operator=(const Animal &cpy)
+WrongAnimal		&WrongAnimal::operator=(const WrongAnimal &cpy)
 {
 	this->type = cpy.type;
-	std::cout << "Animal operator= called" << std::endl;
+	std::cout << "WrongAnimal operator= called" << std::endl;
 	return (*this);
 }
 
-Animal::~Animal(void)
+WrongAnimal::~WrongAnimal(void)
 {
-	std::cout << "Animal destructor called" << std::endl;
+	std::cout << "WrongAnimal destructor called" << std::endl;
 }
 
-std::string	Animal::getType(void) const
+std::string	WrongAnimal::getType(void) const
 {
 	return (this->type);
 }
 
-void		Animal::makeSound(void) const
+void		WrongAnimal::makeSound(void) const
 {
-	std::cout << "Animal sound" << std::endl;
+	std::cout << "WrongAnimal sound" << std::endl;
 }
